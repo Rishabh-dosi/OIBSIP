@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/af47179e85.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    
+    <title>Calculator</title>
+</head>
+<body>    
+    <div class="main_app">
+        <h1 class="heading">CALCULATOR</h1>
+        <div class="calculator">
+            <div class="screen">
+                <p id="exp_display"></p>
+                <p id="display"></p>
+            </div>
+            <div class="buttons">
+                <button type="button" class="btns" onclick="allClear()" >AC</button>
+                <button type="button" class="btns" id="divide" onclick="operation(this.id)"><i class="fa-solid fa-divide"></i></button>
+                <button type="button" class="btns" id="multiply" onclick="operation(this.id)"><i class="fa-solid fa-xmark"></i></button>
+                <button type="button" class="btns" onclick="back()"><i class="fa-solid fa-delete-left"></i></button>
+                <button type="button" class="btns" onclick="BtnNum(this.id)" id="bt7">7</button>
+                <button type="button" class="btns" onclick="BtnNum(this.id)" id="bt8">8</button>
+                <button type="button" class="btns" onclick="BtnNum(this.id)" id="bt9">9</button>
+                <button type="button" class="btns" id="subtract" onclick="operation(this.id)">-</button>
+                <button type="button" class="btns" onclick="BtnNum(this.id)" id="bt4">4</button>
+                <button type="button" class="btns" onclick="BtnNum(this.id)" id="bt5">5</button>
+                <button type="button" class="btns" onclick="BtnNum(this.id)" id="bt6">6</button>
+                <button type="button" class="btns" id="add" onclick="operation(this.id)">+</button>
+                <button type="button" class="btns" onclick="BtnNum(this.id)" id="bt1">1</button>
+                <button type="button" class="btns" onclick="BtnNum(this.id)" id="bt2">2</button>
+                <button type="button" class="btns" onclick="BtnNum(this.id)" id="bt3">3</button>
+                <button type="button" class="btns" onclick="calculate()">=</button>
+                <button type="button" class="btns" onclick="BtnNum(this.id)" id="btdot">.</button>
+                <button type="button" class="btns" onclick="BtnNum(this.id)" id="bt0">0</button>
+                <button type="button" class="btns">%</button>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
